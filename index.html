@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>
         <?= $domainTitle ?> — Образовательная платформа
     </title>
@@ -14,9 +15,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Syne:wght@700;800&display=swap"
         rel="stylesheet">
-
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -48,8 +49,7 @@
             </button>
         </div>
     </header>
-
-    <main>
+<main>
 <section id="hero" class="hero">
     <div id="wave-canvas" class="hero__canvas"></div>
 
@@ -75,13 +75,263 @@
         <div class="mouse"></div>
     </div>
 </section>
+<section id="about" class="about">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-subtitle">Почему выбирают нас</span>
+            <h2 class="section-title">Передовая цифровая <br>инфраструктура</h2>
+        </div>
 
+        <div class="about__grid">
+            <div class="about__card" data-aos="fade-up">
+                <div class="about__icon">
+                    <i data-lucide="cpu"></i>
+                </div>
+                <h3 class="about__name">AI-инструменты</h3>
+                <p class="about__text">Решения, которые меняют правила игры. Мы используем нейросети для адаптации
+                    обучения под ваш темп.</p>
+            </div>
 
+            <div class="about__card" data-aos="fade-up" data-delay="100">
+                <div class="about__icon">
+                    <i data-lucide="shield-check"></i>
+                </div>
+                <h3 class="about__name">Проверенный партнер</h3>
+                <p class="about__text">Экспертная поддержка на всех этапах вашего пути. Мы гарантируем актуальность
+                    методологий.</p>
+            </div>
 
+            <div class="about__card" data-aos="fade-up" data-delay="200">
+                <div class="about__icon">
+                    <i data-lucide="zap"></i>
+                </div>
+                <h3 class="about__name">Быстрый старт</h3>
+                <p class="about__text">Подключение занимает 2 минуты. Пошаговый путь, понятный каждому, даже без
+                    предварительного опыта.</p>
+            </div>
 
+            <div class="about__card" data-aos="fade-up" data-delay="300">
+                <div class="about__icon">
+                    <i data-lucide="trending-up"></i>
+                </div>
+                <h3 class="about__name">Стратегия роста</h3>
+                <p class="about__text">Технологии, которые работают на вас, создавая базу для стабильного пассивного
+                    дохода в будущем.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="courses" class="courses">
+    <div class="container">
+        <div class="section-header--left">
+            <span class="section-subtitle">Обучение будущего</span>
+            <h2 class="section-title">Программы пассивного дохода <br>и роста</h2>
+        </div>
 
+        <div class="swiper courses-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide course-card">
+                    <div class="course-card__tag">New Generation</div>
+                    <h3 class="course-card__title">Цифровые активы</h3>
+                    <p class="course-card__desc">Изучите методологии, доказавшие эффективность на рынке ЕС. Практики,
+                        применимые уже сегодня.</p>
+                    <div class="course-card__footer">
+                        <span class="course-card__duration">8 недель</span>
+                        <a href="#contact" class="course-card__link"><i data-lucide="plus"></i></a>
+                    </div>
+                </div>
 
-    </main>
+                <div class="swiper-slide course-card">
+                    <div class="course-card__tag">AI & Data</div>
+                    <h3 class="course-card__title">Нейросети для задач</h3>
+                    <p class="course-card__desc">AI-инструменты для реальных задач бизнеса. Легко разобраться без опыта
+                        и лишней теории.</p>
+                    <div class="course-card__footer">
+                        <span class="course-card__duration">4 недели</span>
+                        <a href="#contact" class="course-card__link"><i data-lucide="plus"></i></a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide course-card">
+                    <div class="course-card__tag">Strategy</div>
+                    <h3 class="course-card__title">Масштабирование</h3>
+                    <p class="course-card__desc">Расширьте горизонты проекта. Стратегия роста на базе инноваций для
+                        выхода на глобальный рынок.</p>
+                    <div class="course-card__footer">
+                        <span class="course-card__duration">6 недель</span>
+                        <a href="#contact" class="course-card__link"><i data-lucide="plus"></i></a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide course-card">
+                    <div class="course-card__tag">Expert</div>
+                    <h3 class="course-card__title">Финансовый апгрейд</h3>
+                    <p class="course-card__desc">Воплотите мечты в реальность через проверенные временем инструменты
+                        пассивного дохода.</p>
+                    <div class="course-card__footer">
+                        <span class="course-card__duration">10 недель</span>
+                        <a href="#contact" class="course-card__link"><i data-lucide="plus"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+<section id="tech" class="tech">
+    <div class="container tech__container">
+        <div class="tech__content">
+            <span class="section-subtitle" data-aos="fade-right">Инфраструктура</span>
+            <h2 class="section-title" data-aos="fade-right" data-aos-delay="100">Технологии, которые <br>работают на вас
+            </h2>
+            <p class="tech__description" data-aos="fade-right" data-aos-delay="200">
+                Мы объединили лучшие мировые практики и собственные AI-разработки, чтобы создать платформу, где обучение
+                превращается в инвестицию.
+            </p>
+
+            <ul class="tech__list">
+                <li class="tech__item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tech__num">01</div>
+                    <div>
+                        <h4>Neural Adaptive Engine</h4>
+                        <p>Система подстраивает сложность материала под ваш уровень в реальном времени.</p>
+                    </div>
+                </li>
+                <li class="tech__item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="tech__num">02</div>
+                    <div>
+                        <h4>Global Node Network</h4>
+                        <p>Доступ к платформе из любой точки мира с минимальной задержкой.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tech__visual" data-aos="zoom-in-left">
+            <div class="tech__blob"></div>
+            <div class="tech__card-mockup">
+                <div class="mockup-line"></div>
+                <div class="mockup-line short"></div>
+                <div class="mockup-circle"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="faq" class="faq">
+    <div class="container">
+        <div class="faq__grid">
+            <div class="faq__info">
+                <span class="section-subtitle">Помощь</span>
+                <h2 class="section-title">Часто задаваемые <br>вопросы</h2>
+                <p class="faq__text">Платформа уже доступна в Европе. Если вы не нашли ответ на свой вопрос, наша
+                    поддержка готова помочь 24/7.</p>
+                <a href="#contact" class="btn btn--outline">Задать свой вопрос</a>
+            </div>
+
+            <div class="faq__list">
+                <div class="faq__item" data-aos="fade-up">
+                    <div class="faq__header">
+                        <span class="faq__question">Нужен ли предварительный опыт в IT?</span>
+                        <div class="faq__icon"><i data-lucide="plus"></i></div>
+                    </div>
+                    <div class="faq__content">
+                        <p>Нет, платформа разработана так, чтобы обеспечить быстрый и лёгкий старт. Пошаговый путь,
+                            понятный каждому, позволит вам освоить инновационные технологии с нуля.</p>
+                    </div>
+                </div>
+
+                <div class="faq__item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq__header">
+                        <span class="faq__question">Как работает программа пассивного дохода?</span>
+                        <div class="faq__icon"><i data-lucide="plus"></i></div>
+                    </div>
+                    <div class="faq__content">
+                        <p>Мы обучаем стратегиям роста на базе инноваций и использованию AI-инструментов для
+                            автоматизации процессов, что создает базу для долгосрочного дохода.</p>
+                    </div>
+                </div>
+
+                <div class="faq__item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq__header">
+                        <span class="faq__question">Доступна ли платформа в моей стране?</span>
+                        <div class="faq__icon"><i data-lucide="plus"></i></div>
+                    </div>
+                    <div class="faq__content">
+                        <p>На данный момент предложение активно только в странах ЕС и Великобритании. Мы обеспечиваем
+                            полную юридическую поддержку согласно стандартам региона.</p>
+                    </div>
+                </div>
+
+                <div class="faq__item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq__header">
+                        <span class="faq__question">Как быстро я получу доступ после регистрации?</span>
+                        <div class="faq__icon"><i data-lucide="plus"></i></div>
+                    </div>
+                    <div class="faq__content">
+                        <p>Доступ к платформе открыт мгновенно. Подключение занимает 2 минуты сразу после подтверждения
+                            вашей учетной записи.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="contact__wrapper">
+            <div class="contact__info" data-aos="fade-right">
+                <h2 class="section-title">Готовы к <br>апгрейду?</h2>
+                <p class="contact__text">Оставьте заявку на бесплатную консультацию по всем вопросам. Наш эксперт
+                    свяжется с вами в течение 15 минут.</p>
+
+                <div class="contact__methods">
+                    <div class="contact__method">
+                        <i data-lucide="check-circle"></i>
+                        <span>Поддержка по всем вопросам</span>
+                    </div>
+                    <div class="contact__method">
+                        <i data-lucide="check-circle"></i>
+                        <span>Экспертная поддержка на всех этапах</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact__form-container" data-aos="fade-left">
+                <form id="main-form" class="form">
+                    <div class="form__group">
+                        <input type="text" name="name" class="form__input" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" name="email" class="form__input" placeholder="Email" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="tel" name="phone" id="phone-input" class="form__input"
+                            placeholder="Телефон (только цифры)" required>
+                    </div>
+
+                    <div class="form__captcha">
+                        <span id="captcha-question" class="captcha-label">2 + 5 = </span>
+                        <input type="text" id="captcha-answer" class="form__input form__input--captcha" placeholder="?"
+                            required>
+                    </div>
+
+                    <label class="form__checkbox">
+                        <input type="checkbox" required checked>
+                        <span class="checkbox-text">Я согласен с <a href="./personal-data-policy.php">политикой
+                                конфиденциальности</a></span>
+                    </label>
+
+                    <button type="submit" class="btn btn--primary btn--full">Запросить доступ</button>
+
+                    <div id="form-success" class="form-status success">
+                        <i data-lucide="party-popper"></i> Заявка успешно отправлена!
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
 
     <footer class="footer">
         <div class="container footer__grid">
@@ -135,10 +385,28 @@
             </p>
         </div>
     </footer>
-
+    <div class="nav-mobile">
+        <ul class="nav__list--mobile">
+            <li><a href="./#hero">Главная</a></li>
+            <li><a href="./#about">О платформе</a></li>
+            <li><a href="./#courses">Программы</a></li>
+            <li><a href="./#tech">Технологии</a></li>
+            <li><a href="./#contact">Связаться</a></li>
+        </ul>
+    </div>
+    
+    <div id="cookie-popup" class="cookie">
+        <div class="cookie__content">
+            <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.php">Cookie
+                    политике</a>.</p>
+            <button id="cookie-accept" class="btn btn--accent-sm">Принять</button>
+        </div>
+    </div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 
